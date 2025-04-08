@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
@@ -9,6 +10,6 @@ class MainController
     #[Route('/')]
     public function HomePage()
     {
-        return new Response("<strong>Hello World !</strong>");
+        return new Response('<strong>Hello World !</strong>');
     }
 }
