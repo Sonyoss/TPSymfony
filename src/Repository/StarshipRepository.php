@@ -36,4 +36,13 @@ class StarshipRepository
             ),
         ];
     }
+
+    public function find(int $id):?Starship{
+        $starships = $this->findAll();
+        foreach($starships as $ship){
+            if($ship->getId() == $id) return $ship;
+        }
+        return null;
+        
+    }
 }
